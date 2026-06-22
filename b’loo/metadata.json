@@ -1,0 +1,6 @@
+{
+  "name": "b’loo",
+  "description": "Bloom With Love — 一款結合花語、飲食覺察、情緒紀錄、每日運勢與個人花園養成的韓系療癒型行動 App。透過花朵陪伴，引導使用者與自己建立更好的關係。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

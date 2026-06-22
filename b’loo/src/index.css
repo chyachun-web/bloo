@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,450&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=League+Spartan:wght@700;800;900&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bernoru";
+  src: url("https://db.onlinewebfonts.com/t/ec503ae8e6fcafb4dd7ba5e807fffd6b.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/ec503ae8e6fcafb4dd7ba5e807fffd6b.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Gowun Batang", "Playfair Display", Georgia, serif;
+  --font-futura: "Futura", "Futura-Bold", "Futura-ExtraBold", "League Spartan", "Trebuchet MS", "Outfit", "Inter", sans-serif;
+  --font-bernoru: "Bernoru", "League Spartan", "Futura", "Futura-Bold", sans-serif;
+  
+  /* Brand color token helpers */
+  --color-babyblue: #a3c9e8;
+  --color-babyblue-light: #d6e8f5;
+  --color-cream: #faf7f2;
+}
+
+/* Custom background grid styling reflecting the b'loo blue-and-white checkered look from the logo */
+.bg-checkered {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(90deg, rgba(163, 201, 232, 0.15) 50%, transparent 50%),
+    linear-gradient(rgba(163, 201, 232, 0.15) 50%, transparent 50%);
+  background-size: 32px 32px;
+}
+
+/* Subtle organic sways for garden flowers */
+@keyframes sway {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(3deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+@keyframes sway-slow {
+  0% { transform: rotate(-1deg); }
+  50% { transform: rotate(1.5deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+@keyframes sway-fast {
+  0% { transform: rotate(-4deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-4deg); }
+}
+
+.animate-sway {
+  animation: sway 5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-sway-slow {
+  animation: sway-slow 7s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-sway-fast {
+  animation: sway-fast 3.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Scrollbar styling for Korean clean touch */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(163, 201, 232, 0.4);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(163, 201, 232, 0.7);
+}
